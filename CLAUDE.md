@@ -10,7 +10,7 @@ GitHub: xbtlin/ai-berkshire
 ```
 skills/          — 投研 Skill 定義（.md），複製到 ~/.claude/commands/ 使用
 tools/           — 輔助工具（financial_rigor.py 精確計算、twstock_data.py 臺股FinMind取數）
-reports/         — 投資研究報告輸出
+local/reports/         — 投資研究報告輸出
 assets/          — 圖片等靜態資源
 ```
 
@@ -19,7 +19,7 @@ assets/          — 圖片等靜態資源
 所有報告按**公司名**建文件夾，公司相關的所有報告放在對應文件夾內：
 
 ```
-reports/
+local/reports/
 ├── AI產業研究/              — AI產業鏈全景研究（置頂）
 │   ├── AI五層蛋糕-產業全景研究-20260605.md
 │   └── AI五層蛋糕-公衆號-20260605.md
@@ -41,22 +41,22 @@ reports/
 
 | Skill | 文件命名格式 | 示例 |
 |------|---------|------|
-| /investment-team | `{公司名}/` 目錄內含4個視角+最終報告 | `reports/拼多多/最終報告.md` |
-| /investment-research | `{公司名}-research-{YYYYMMDD}.md` | `reports/騰訊/騰訊-research-20260408.md` |
-| /investment-checklist | `{公司名}-checklist-{YYYYMMDD}.md` | `reports/騰訊/騰訊-checklist-20260408.md` |
-| /industry-research | `{行業名}-industry-{YYYYMMDD}.md`（根目錄） | `reports/核電-industry-20260409.md` |
-| /industry-funnel | `{行業名}-funnel-{YYYYMMDD}.md`（根目錄） | `reports/AI算力-funnel-20260509.md` |
-| /private-company-research | `{公司名}-private-{YYYYMMDD}.md` | `reports/字節跳動/字節跳動-private-20260408.md` |
-| /earnings-review | `{公司名}-earnings-{期間}.md` | `reports/騰訊/騰訊-earnings-2025Q4.md` |
-| /earnings-team | `{公司名}/` 目錄內含4個大師視角+研究底稿+公衆號文章+讀者評審 | `reports/騰訊/騰訊-earnings-2025Q4.md`（公衆號定稿） |
-| /thesis-tracker | `{公司名}-thesis.md`（長期維護） | `reports/騰訊/騰訊-thesis.md` |
-| /portfolio-review | `portfolio-latest.md`（根目錄，持續更新） | `reports/portfolio-latest.md` |
-| /management-deep-dive | `{公司名}-management-{YYYYMMDD}.md` | `reports/騰訊/騰訊-management-20260409.md` |
+| /investment-team | `{公司名}/` 目錄內含4個視角+最終報告 | `local/reports/拼多多/最終報告.md` |
+| /investment-research | `{公司名}-research-{YYYYMMDD}.md` | `local/reports/騰訊/騰訊-research-20260408.md` |
+| /investment-checklist | `{公司名}-checklist-{YYYYMMDD}.md` | `local/reports/騰訊/騰訊-checklist-20260408.md` |
+| /industry-research | `{行業名}-industry-{YYYYMMDD}.md`（根目錄） | `local/reports/核電-industry-20260409.md` |
+| /industry-funnel | `{行業名}-funnel-{YYYYMMDD}.md`（根目錄） | `local/reports/AI算力-funnel-20260509.md` |
+| /private-company-research | `{公司名}-private-{YYYYMMDD}.md` | `local/reports/字節跳動/字節跳動-private-20260408.md` |
+| /earnings-review | `{公司名}-earnings-{期間}.md` | `local/reports/騰訊/騰訊-earnings-2025Q4.md` |
+| /earnings-team | `{公司名}/` 目錄內含4個大師視角+研究底稿+公衆號文章+讀者評審 | `local/reports/騰訊/騰訊-earnings-2025Q4.md`（公衆號定稿） |
+| /thesis-tracker | `{公司名}-thesis.md`（長期維護） | `local/reports/騰訊/騰訊-thesis.md` |
+| /portfolio-review | `portfolio-latest.md`（根目錄，持續更新） | `local/reports/portfolio-latest.md` |
+| /management-deep-dive | `{公司名}-management-{YYYYMMDD}.md` | `local/reports/騰訊/騰訊-management-20260409.md` |
 
 ## /investment-team 文件結構
 
 ```
-reports/{公司名}/
+local/reports/{公司名}/
 ├── README.md                         — 研究框架概覽+核心結論
 ├── 01-商業模式分析-段永平視角.md
 ├── 02-財務估值分析-巴菲特視角.md
@@ -97,7 +97,7 @@ reports/{公司名}/
 ```bash
 # 推送報告到GitHub
 cd ~/ai-berkshire
-git add reports/xxx.md
+git add local/reports/xxx.md
 git commit -m "添加xxx報告"
 git pull --rebase origin main
 git push origin main

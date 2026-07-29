@@ -1047,7 +1047,7 @@ Top 3 核心風險及應對策略
 
 ### 第八步：保存報告
 
-將完整最終報告寫入 `reports/{公司名}/{公司名}-private-{YYYYMMDD}.md`。
+將完整最終報告寫入 `local/reports/{公司名}/{公司名}-private-{YYYYMMDD}.md`。
 
 ### 第九步：清理團隊
 

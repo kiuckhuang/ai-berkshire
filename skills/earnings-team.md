@@ -399,7 +399,7 @@
 ## 輸出文件
 
 ```
-reports/{公司名}/
+local/reports/{公司名}/
 ├── {公司名}-earnings-{期間}.md           ← 最終公衆號文章（定稿）
 ├── {公司名}-earnings-{期間}-研究底稿.md   ← 四大師合成研究報告（自用）
 ├── {公司名}-earnings-{期間}-段永平.md     ← 生意本質解讀
@@ -415,7 +415,7 @@ reports/{公司名}/
 
 ```bash
 python3 tools/report_audit.py extract \
-  --report reports/{公司名}/{公司名}-earnings-{期間}.md
+  --report local/reports/{公司名}/{公司名}-earnings-{期間}.md
 
 python3 tools/report_audit.py verdict \
   --results '<填好的JSON>' \
