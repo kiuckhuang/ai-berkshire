@@ -88,7 +88,7 @@ This skill is generated from `skills/wechat-article.md` so Claude Code and Codex
 {根據第一步確認的讀者畫像}
 
 ## 寫作風格要求
-- 純中文表達，避免中英文夾雜（技術術語首次出現時給英文，後續用中文）
+- 純繁體中文（香港）表達，避免中英文夾雜（技術術語首次出現時給英文，後續用繁體中文）
 - 像寫給聰明的朋友看的技術科普，不是學術論文翻譯
 - 用類比幫助理解，但類比要貼切、不俗套
 - 關鍵公式/數據要有，但每個都要用大白話解釋
@@ -227,9 +227,9 @@ This skill is generated from `skills/wechat-article.md` so Claude Code and Codex
 
 | 類型 | 路徑 | 命名格式 |
 |------|------|---------|
-| 技術主題 | `reports/AI產業研究/` | `公衆號-{主題關鍵詞}-{YYYYMMDD}.md` |
-| 投資主題 | `reports/{公司名}/` | `{公司名}-公衆號-{YYYYMMDD}.md` |
-| 通用主題 | `reports/` | `公衆號-{主題關鍵詞}-{YYYYMMDD}.md` |
+| 技術主題 | `local/reports/AI產業研究/` | `公衆號-{主題關鍵詞}-{YYYYMMDD}.md` |
+| 投資主題 | `local/reports/{公司名}/` | `{公司名}-公衆號-{YYYYMMDD}.md` |
+| 通用主題 | `local/reports/` | `公衆號-{主題關鍵詞}-{YYYYMMDD}.md` |
 
 ---
 

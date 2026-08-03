@@ -20,7 +20,7 @@ This skill is generated from `skills/portfolio-review.md` so Claude Code and Cod
 **支持輸入格式**：
 - 持倉清單，例如：`騰訊30%, 美團20%, 茅臺20%, 英偉達15%, 現金15%`
 - 或：`騰訊 500股 @480港元, 美團 1000股 @130港元, ...`
-- 或：`我的持倉`（如果已有保存的組合文件 `reports/portfolio-latest.md`）
+- 或：`我的持倉`（如果已有保存的組合文件 `local/reports/portfolio-latest.md`）
 
 > "分散投資是對無知的保護。如果你知道自己在做什麼，分散投資就沒有意義。" —— 巴菲特
 >
@@ -47,7 +47,7 @@ This skill is generated from `skills/portfolio-review.md` so Claude Code and Cod
 
 如果輸入只有比例沒有金額，按比例分析即可。
 
-同時檢查是否存在已有的組合文件（`reports/portfolio-latest.md`），如有則讀取並更新。
+同時檢查是否存在已有的組合文件（`local/reports/portfolio-latest.md`），如有則讀取並更新。
 
 ### 第二步：獲取最新數據
 
@@ -155,7 +155,7 @@ This skill is generated from `skills/portfolio-review.md` so Claude Code and Cod
 
 #### 5.2 尋找替代標的
 
-如果組合中有"不如現金"的倉位，或者現金佔比過高，建議使用 `/industry-research` 或 `/investment-checklist` 對感興趣的行業/公司進行系統篩選，而非在本Skill內直接推薦個股。
+如果組閤中有"不如現金"的倉位，或者現金佔比過高，建議使用 `/industry-research` 或 `/investment-checklist` 對感興趣的行業/公司進行系統篩選，而非在本Skill內直接推薦個股。
 
 #### 5.3 現金管理
 
@@ -188,7 +188,7 @@ This skill is generated from `skills/portfolio-review.md` so Claude Code and Cod
 
 ### 第七步：保存組合文件
 
-將組合信息寫入 `reports/portfolio-latest.md`，包含：
+將組合信息寫入 `local/reports/portfolio-latest.md`，包含：
 - 最新持倉表
 - 本次審視日期和結論
 - 調倉記錄（追加）

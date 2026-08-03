@@ -46,6 +46,21 @@ This skill is generated from `skills/investment-team.md` so Claude Code and Code
 
 將評級結果告知每個Agent，影響其研究方式。
 
+### 第一步¾：WebSearch 權限預檢（關鍵 · 避免 Agent 靜默退化）
+
+在創建團隊、啓動任何後臺 Agent **之前**，必須先確認 WebSearch 權限已放行。
+
+**爲什麼必須預檢**：本 skill 用 `run_in_background: true` 啓動 4 個後臺子 Agent，而**後臺 Agent 無法向用戶彈出交互式權限確認**。若 `WebSearch` 未在 `.claude/settings.local.json` 的 `permissions.allow` 白名單中，子 Agent 的聯網搜索會被**靜默攔截**，導致其退化爲僅憑訓練知識（有知識截止日期）作答，卻仍按框架輸出一份"看起來完整、實則未聯網"的僞研究——這是本 skill 最危險的失敗模式（見 issue #58）。
+
+**預檢步驟**：
+1. 用 Bash 檢查白名單是否含 WebSearch：
+   ```bash
+   grep -l '"WebSearch"' .claude/settings.local.json ~/.claude/settings.local.json 2>/dev/null
+   ```
+2. 若兩處都未命中（即未放行）→ **停下來，不要啓動 Agent**，提示用戶：
+   > ⚠️ 檢測到 WebSearch 未在權限白名單中。後臺研究 Agent 無法聯網，會退化成僅憑訓練知識作答。請先在 `.claude/settings.local.json` 的 `permissions.allow` 加入 `"WebSearch"`（或運行 `/permissions` 勾選），再重跑本命令。
+3. 命中 → 正常繼續。
+
 ### 第二步：創建團隊
 
 使用 TeamCreate 創建團隊：
@@ -131,6 +146,7 @@ This skill is generated from `skills/investment-team.md` so Claude Code and Code
 - **財務數據必須來自兩個獨立來源**，按 `skills/financial-data.md` 規範執行（美股：macrotrends+stockanalysis；港股：aastocks+macrotrends；A股：東方財富+巨潮資訊；臺股：FinMind `tools/twstock_data.py`+Goodinfo），兩源誤差>1%須標記
 - 確保數據準確，關鍵數據標註來源
 - 分析要深入，不流於表面
+- **聯網失敗禁止僞裝**：若 WebSearch 被攔截/不可用，禁止用訓練知識冒充聯網結果。必須在報告頂部醒目標註「⚠️ 本報告未能聯網，基於訓練知識（截止日期 X），置信度降級」，並如實告知 team-lead，由其決定是否中止研究
 
 **輸出要求**：
 - 報告要詳盡，使用Markdown表格呈現關鍵數據
