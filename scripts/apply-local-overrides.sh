@@ -48,11 +48,13 @@ for f in "${FILES[@]}" skills/investment-research.md; do
   restore "$f"
 done
 
-# investment-research.md 需要保留一處例外：引用 upstream 追蹤檔案
-# reports/7公司10年投资价值横评-... 不可改成 local/reports/
+# investment-research.md 需要兩處額外處理：
+#   1. 例外保留：引用 upstream 追蹤檔案 reports/7公司10年投资价值横评-... 不可改
+#   2. 輸出路徑 ~/[公司名]投资研究报告.md → local/reports/（不含 "reports/" 字串，主迴圈抓不到）
 f=skills/investment-research.md
 if [[ -f "$f" ]]; then
   sed -i 's|local/reports/7公司10年投资价值横评|reports/7公司10年投资价值横评|g' "$f"
+  sed -i 's|`~/\[公司名\]投资研究报告\.md`|`local/reports/[公司名]投资研究报告.md`|g' "$f"
 fi
 
 if [[ "$changed" == "1" ]]; then
