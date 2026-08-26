@@ -10,7 +10,7 @@ GitHub: xbtlin/ai-berkshire
 ```
 skills/          — 投研 Skill 定义（.md），复制到 ~/.claude/commands/ 使用
 tools/           — 辅助工具（financial_rigor.py 精确计算、twstock_data.py 台股FinMind取数）
-reports/         — 投资研究报告输出
+local/reports/         — 投资研究报告输出
 assets/          — 图片等静态资源
 ```
 
@@ -19,7 +19,7 @@ assets/          — 图片等静态资源
 所有报告按**公司名**建文件夹，公司相关的所有报告放在对应文件夹内：
 
 ```
-reports/
+local/reports/
 ├── AI产业研究/              — AI产业链全景研究（置顶）
 │   ├── AI五层蛋糕-产业全景研究-20260605.md
 │   └── AI五层蛋糕-公众号-20260605.md
@@ -41,22 +41,22 @@ reports/
 
 | Skill | 文件命名格式 | 示例 |
 |------|---------|------|
-| /investment-team | `{公司名}/` 目录内含4个视角+最终报告 | `reports/拼多多/最终报告.md` |
-| /investment-research | `{公司名}-research-{YYYYMMDD}.md` | `reports/腾讯/腾讯-research-20260408.md` |
-| /investment-checklist | `{公司名}-checklist-{YYYYMMDD}.md` | `reports/腾讯/腾讯-checklist-20260408.md` |
-| /industry-research | `{行业名}-industry-{YYYYMMDD}.md`（根目录） | `reports/核电-industry-20260409.md` |
-| /industry-funnel | `{行业名}-funnel-{YYYYMMDD}.md`（根目录） | `reports/AI算力-funnel-20260509.md` |
-| /private-company-research | `{公司名}-private-{YYYYMMDD}.md` | `reports/字节跳动/字节跳动-private-20260408.md` |
-| /earnings-review | `{公司名}-earnings-{期间}.md` | `reports/腾讯/腾讯-earnings-2025Q4.md` |
-| /earnings-team | `{公司名}/` 目录内含4个大师视角+研究底稿+公众号文章+读者评审 | `reports/腾讯/腾讯-earnings-2025Q4.md`（公众号定稿） |
-| /thesis-tracker | `{公司名}-thesis.md`（长期维护） | `reports/腾讯/腾讯-thesis.md` |
-| /portfolio-review | `portfolio-latest.md`（根目录，持续更新） | `reports/portfolio-latest.md` |
-| /management-deep-dive | `{公司名}-management-{YYYYMMDD}.md` | `reports/腾讯/腾讯-management-20260409.md` |
+| /investment-team | `{公司名}/` 目录内含4个视角+最终报告 | `local/reports/拼多多/最终报告.md` |
+| /investment-research | `{公司名}-research-{YYYYMMDD}.md` | `local/reports/腾讯/腾讯-research-20260408.md` |
+| /investment-checklist | `{公司名}-checklist-{YYYYMMDD}.md` | `local/reports/腾讯/腾讯-checklist-20260408.md` |
+| /industry-research | `{行业名}-industry-{YYYYMMDD}.md`（根目录） | `local/reports/核电-industry-20260409.md` |
+| /industry-funnel | `{行业名}-funnel-{YYYYMMDD}.md`（根目录） | `local/reports/AI算力-funnel-20260509.md` |
+| /private-company-research | `{公司名}-private-{YYYYMMDD}.md` | `local/reports/字节跳动/字节跳动-private-20260408.md` |
+| /earnings-review | `{公司名}-earnings-{期间}.md` | `local/reports/腾讯/腾讯-earnings-2025Q4.md` |
+| /earnings-team | `{公司名}/` 目录内含4个大师视角+研究底稿+公众号文章+读者评审 | `local/reports/腾讯/腾讯-earnings-2025Q4.md`（公众号定稿） |
+| /thesis-tracker | `{公司名}-thesis.md`（长期维护） | `local/reports/腾讯/腾讯-thesis.md` |
+| /portfolio-review | `portfolio-latest.md`（根目录，持续更新） | `local/reports/portfolio-latest.md` |
+| /management-deep-dive | `{公司名}-management-{YYYYMMDD}.md` | `local/reports/腾讯/腾讯-management-20260409.md` |
 
 ## /investment-team 文件结构
 
 ```
-reports/{公司名}/
+local/reports/{公司名}/
 ├── README.md                         — 研究框架概览+核心结论
 ├── 01-商业模式分析-段永平视角.md
 ├── 02-财务估值分析-巴菲特视角.md
@@ -97,7 +97,7 @@ reports/{公司名}/
 ```bash
 # 推送报告到GitHub
 cd ~/ai-berkshire
-git add reports/xxx.md
+git add local/reports/xxx.md
 git commit -m "添加xxx报告"
 git pull --rebase origin main
 git push origin main
