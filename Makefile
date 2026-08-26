@@ -3,7 +3,10 @@
 
 .DEFAULT_GOAL := help
 
-.PHONY: help init fetch sync overrides codex check test push
+.PHONY: help init fetch sync overrides codex check test push dsh-skill
+
+dsh-skill: ## 把 skills 安裝進 DeepSeek Harness（symlink 到 ~/.dsh/skills/，新 session 即用）
+	bash scripts/install-dsh-skills.sh
 
 # 可選依賴 playwright 預設跳過（只有 tools/xueqiu_scraper.py 會用到）；
 # 需要時明確打：make init PLAYWRIGHT=1
