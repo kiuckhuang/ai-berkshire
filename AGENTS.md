@@ -39,6 +39,16 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 - Keep `CLAUDE.md` for Claude Code behavior and this `AGENTS.md` for Codex
   behavior.
 
+## Output Language (local override, highest priority)
+
+- Regardless of the language of the skill source files, **all final report
+  prose, analysis, tables, and conclusions must be written in Traditional
+  Chinese (Hong Kong usage)**.
+- This affects output text only: search, computation, tool invocations, the
+  `local/reports/` path convention, and file naming rules are unchanged.
+- Quoted skill text or masters' quotes may keep their original wording, but
+  all narrative must be Traditional Chinese (Hong Kong).
+
 ## Research Quality Rules
 
 - Before starting any research, run the `date` command to confirm today's
