@@ -5,13 +5,17 @@
 
 .PHONY: help init fetch sync overrides codex check test push
 
-init: ## 初始化環境：檢查 python3/make，安裝可選依賴 playwright（xueqiu_scraper 用；SKIP_PLAYWRIGHT=1 可跳過）
+# 可選依賴 playwright 預設跳過（只有 tools/xueqiu_scraper.py 會用到）；
+# 需要時明確打：make init PLAYWRIGHT=1
+PLAYWRIGHT ?= 0
+
+init: ## 初始化環境：檢查 python3/make＋跑測試（PLAYWRIGHT=1 才裝 xueqiu_scraper 的可選依賴）
 	@command -v python3 >/dev/null || { echo "❌ 需要 python3"; exit 1; }
 	@command -v make >/dev/null || { echo "❌ 需要 make"; exit 1; }
 	@python3 -c "import sys; v=sys.version_info; assert v >= (3, 8), f'需要 Python ≥ 3.8，目前 {v.major}.{v.minor}'"
 	@echo "✅ python3 $$(python3 --version | cut -d' ' -f2)、make 就緒"
 	@echo "核心工具（tools/*.py、scripts/*.py、tests/）全部零第三方依賴，無需額外安裝"
-ifneq ($(SKIP_PLAYWRIGHT),1)
+ifeq ($(PLAYWRIGHT),1)
 	@if python3 -c "import playwright" 2>/dev/null; then \
 		echo "✅ playwright 已安裝（可選依賴，xueqiu_scraper 用）"; \
 	else \
@@ -21,7 +25,7 @@ ifneq ($(SKIP_PLAYWRIGHT),1)
 			echo "⚠️  playwright 安裝失敗（可選依賴，不影響核心功能）。用到 xueqiu_scraper 時再跑：python3 -m pip install --user playwright && python3 -m playwright install chromium"; \
 	fi
 else
-	@echo "已跳過 playwright（SKIP_PLAYWRIGHT=1）"
+	@echo "已跳過可選依賴 playwright（預設跳過；需要雪球爬蟲時跑 make init PLAYWRIGHT=1）"
 endif
 	@$(MAKE) --no-print-directory test
 
