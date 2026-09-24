@@ -16,7 +16,7 @@
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2354 份报告 · 110 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-22。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2348 份报告 · 112 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-24。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -657,17 +657,18 @@ REM 可选：安装 Codex slash prompts
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2354 份报告 · 110 家公司 · 23 个专题 · 更新至 2026-09-22
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2348 份报告 · 112 家公司 · 23 个专题 · 更新至 2026-09-24
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-09-24 | [Tempus AI（TEM / NASDAQ）投資研究報告](reports/Tempus-AI/Tempus-AI-research-20260924.md) | Tempus-AI |
+| 2026-09-24 | [Symbotic Inc.（SYM / NASDAQ）投資研究報告](reports/Symbotic/Symbotic-research-20260924.md) | Symbotic |
+| 2026-09-24 | [Intuitive Surgical（ISRG / NASDAQ）深度投資研究報告](reports/Intuitive-Surgical/Intuitive-Surgical-research-20260924.md) | Intuitive-Surgical |
+| 2026-09-24 | [禾賽集團（HSAI / 2525.HK）深度投資研究報告](reports/Hesai/Hesai-research-20260924.md) | Hesai |
+| 2026-09-24 | [Alphabet (GOOGL) 深度研究：Fwd PE > Trailing PE 之謎拆解](reports/Google/Alphabet-research-20260924.md) | Google |
 | 2026-09-22 | [快手与 MiniMax：护城河与五年盈利推演](reports/快手与MiniMax-护城河与五年盈利推演-20260922.md) | 综合与横评 |
-| 2026-09-22 | [不动权重的训练：文本空间优化两年演进——从 TextGrad 到技能自进化，再到运行框架与模型协同进化](reports/AI产业研究/文本空间优化-从TextGrad到技能与运行框架协同进化-技术报告-20260922.md) | AI产业研究 |
-| 2026-09-22 | [大模型请了更强的老师，成功率从 78% 掉到 63%](reports/AI产业研究/公众号-不动权重的训练-老师更强学生反而掉15分-20260922.md) | AI产业研究 |
-| 2026-09-20 | [曾鸣最新访谈：现在连浏览器都还没出现，模型公司不是终局赢家](reports/曾鸣/曾鸣-公众号-20260920.md) | 曾鸣 |
-| 2026-09-12 | [早期年度财务补录（用于重建长历史估值序列）](reports/持仓估值分位与未来盈利-20260912/早期年度财务补录.md) | 持仓估值分位与未来盈利 |
 
 <!-- REPORTS-INDEX:END -->
 
