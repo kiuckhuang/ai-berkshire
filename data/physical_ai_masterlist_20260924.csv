@@ -1,0 +1,23 @@
+﻿層級,公司,Ticker,交易所,幣別,Physical AI 用途,AI 大腦/tokens 角色,盈利狀態,收入 TTM (US$B),淨利率,股價,市值 (US$B),Trailing PE,Forward PE,52週表現,估值/吸引力判斷,監察重點,報價連結
+Tier 1｜賺錢現金流,Intuitive Surgical,ISRG,NASDAQ,USD,"微創手術機械人 da Vinci（裝機 11,710 台 @2026-06-30（+12%））",器械+影像AI；80%+經常性收入（耗材/服務）,賺錢（淨利率28.5%）,11.03,0.2845,398.3,140.7,45.7,35.3,-0.104,質素最高但唔算平——核心倉「收息型」,下次業績 2026-10-20,Yahoo報價
+Tier 1｜賺錢現金流,Deere & Company,DE,NYSE,USD,自主拖拉機 + See&Spray 精準農業,邊緣AI視覺；田間即時決策,賺錢（淨利率10.2%）,47.93,0.1017,709.48,191.3,39.4,33.8,0.513,已被市場重估（52週+51%）；農業週期+估值唔平,ex-div 2026-09-30,Yahoo報價
+Tier 1｜賺錢現金流,Keyence,6861.T,東京,JPY,機器視覺/傳感——工廠之眼,工廠自動化嘅判斷層,賺錢（淨利率35–40%）,,0.3922,77270,,37.7,33.4,0.3798,盈利王（淨利率39.2%）；日本長錢偏好；已核實,,Yahoo報價
+Tier 1｜賺錢現金流,FANUC,6954.T,東京,JPY,工業機械人/CNC,週期性資本開支,賺錢（週期）,,,6021,,,,,黃色機械人軍團；隨製造業週期,,Yahoo報價
+Tier 1｜賺錢現金流,Yaskawa,6506.T,東京,JPY,伺服馬達/工業機械人,機械人「關節」供應商,賺錢（週期）,,,4507,,,,,人形機械人供應鏈潛在受惠者,,Yahoo報價
+Tier 1｜賺錢現金流,Hesai Group,HSAI,NASDAQ,USD,LiDAR——自駕/機械人之眼（出貨量第一）,供硬件；唔直接食token,賺錢（淨利率14.9%）,0.49,0.1493,16.31,2.55,34.7,22.2,-0.451,淨現金$875M=市值34%；深價，但地緣+價格戰風險,52週-45%：等週期修復,Yahoo報價
+Tier 1｜賺錢現金流,Zebra Technologies,ZBRA,NASDAQ,USD,倉庫掃描/RFID/機器視覺,倉庫數據採集層,賺錢,,,371.02,,,,,倉庫自動化周邊龍頭,,Yahoo報價
+Tier 1｜賺錢現金流,Stryker,SYK,NYSE,USD,Mako 骨科手術機械人,術前規劃AI,賺錢,,,273.4,,,,,手術機械人滲透率提升,,Yahoo報價
+Tier 1｜賺錢現金流,Medtronic,MDT,NYSE,USD,Hugo 手術機械人+醫療器械,手術AI,賺錢,,,89.3,,,,,大型醫療器械防守型,,Yahoo報價
+Tier 1｜賺錢現金流,Roborock 石頭科技,688169.SS,上交所,CNY,掃地/清潔機械人,家務AI,賺錢,,,114.76,,,,,「幫手做家務」已成功案例；52週高位回撤約-47%,,Yahoo報價
+Tier 2｜啱啱轉賺,Symbotic,SYM,NASDAQ,USD,AI倉庫機械人系統（Walmart大客）,系統集成+機械人調度,啱啱轉賺（FY26Q1首次盈利$13M）,2.65,0.0031,43.69,26.4,3218.9,63.9,-0.281,backlog $22.5B + FCF $795M（含客戶預付，注意質素）；賠率好，睇轉化,backlog轉化率 + 毛利（現21%）,Yahoo報價
+Tier 2｜啱啱轉賺,Ouster,OUST,NASDAQ,USD,數位LiDAR,硬件+軟件訂閱,接近打和,,,39.38,,,,,HSAI同業嘅美股選項,,Yahoo報價
+Tier 3｜高增長燒錢,Tempus AI,TEM,NASDAQ,USD,精準醫療AI/診斷+臨床數據,基因組+臨床大數據模型,燒錢（TTM -$254M；FCF -$263M）,1.43,-0.1777,76.59,13.8,,,-0.108,FDA xT CDx + BioNTech夥伴係正面；等GAAP轉正,短倉佔流通股16.3%,Yahoo報價
+Tier 3｜高增長燒錢,Aurora Innovation,AUR,NASDAQ,USD,L4自動卡車（Dallas–Houston）,長途貨運自主駕駛,燒錢,,,6.32,,,,,商業化啱啱起步；Uber合作,,Yahoo報價
+Tier 3｜高增長燒錢,Serve Robotics,SERV,NASDAQ,USD,行人路送貨機械人,L4短途配送,燒錢,,,4.31,,,,,Uber Eats平台合作；細市值高波動,,Yahoo報價
+Tier 3｜高增長燒錢,Butterfly Network,BFLY,NYSE,USD,掌上超聲波+AI訂閱,影像AI SaaS,燒錢,,,9.2,,,,,醫療普及化（生命質素）故事,,Yahoo報價
+鏟仔｜供應鏈/平台,NVIDIA,NVDA,NASDAQ,USD,機械人大腦平台 Isaac/GR00T/Thor,賣算力=最大token收租佬,賺錢,,,225.51,,,,,整個physical AI嘅token供應商,$500B backlog（係訂單唔係收入）,Yahoo報價
+鏟仔｜供應鏈/平台,Qualcomm,QCOM,NASDAQ,USD,邊緣AI芯片（機械人/車用）,edge推理,賺錢,,,197.24,,,,,邊緣推理受惠token平價化,,Yahoo報價
+分發/母公司,Alphabet,GOOGL,NASDAQ,USD,Waymo+TPU+Search/Workspace,自家算力餵自家應用,賺錢,445.9,0.5477,337.83,4130,17,25.2,0.338,間接揸Waymo；⚠️Fwd PE(25.2)＞Trailing(17.0)=市場預期盈利倒退（AI capex擠壓）,業績 2026-10-28；FCF $53B,Yahoo報價
+分發/母公司,Uber,UBER,NYSE,USD,robotaxi/送貨分發層,調度網絡（唔使自己揸車）,賺錢,,,69.42,,,,,Waymo/Aurora嘅分發入口,,Yahoo報價
+私人市場(買唔到),Waymo（私人）,—,私人,USD,robotaxi六城營運,L4,蝕錢,0.36,,,126,,,,$126B估值≈350x PS；40–50萬週單+重傷-92%；但44%空駛,目標100萬週單/2026年底（獨立預測中位數71萬）,
+私人市場(買唔到),Figure/1X/Zipline/Physical Intelligence,—,私人,USD,人形機械人/無人機配送/機械人大腦VLA,最大token新用家,燒錢,,,,39,,,,Figure估值$39B；買唔到=避過pets.com風險,部署數字對唔上文件（7月調查）,
