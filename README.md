@@ -16,7 +16,7 @@
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2348 份报告 · 112 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-24。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2355 份报告 · 112 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-25。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -657,18 +657,18 @@ REM 可选：安装 Codex slash prompts
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2348 份报告 · 112 家公司 · 23 个专题 · 更新至 2026-09-24
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2355 份报告 · 112 家公司 · 23 个专题 · 更新至 2026-09-25
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
-| 2026-09-24 | [Tempus AI（TEM / NASDAQ）投資研究報告](reports/Tempus-AI/Tempus-AI-research-20260924.md) | Tempus-AI |
-| 2026-09-24 | [Symbotic Inc.（SYM / NASDAQ）投資研究報告](reports/Symbotic/Symbotic-research-20260924.md) | Symbotic |
-| 2026-09-24 | [Intuitive Surgical（ISRG / NASDAQ）深度投資研究報告](reports/Intuitive-Surgical/Intuitive-Surgical-research-20260924.md) | Intuitive-Surgical |
-| 2026-09-24 | [禾賽集團（HSAI / 2525.HK）深度投資研究報告](reports/Hesai/Hesai-research-20260924.md) | Hesai |
-| 2026-09-24 | [Alphabet (GOOGL) 深度研究：Fwd PE > Trailing PE 之謎拆解](reports/Google/Alphabet-research-20260924.md) | Google |
-| 2026-09-22 | [快手与 MiniMax：护城河与五年盈利推演](reports/快手与MiniMax-护城河与五年盈利推演-20260922.md) | 综合与横评 |
+| 2026-09-25 | [美团：AI 能创造多少利润，十年后还能留下多少？](reports/美团/美团-investment-team-AI利润-20260925.md) | 美团 |
+| 2026-09-25 | [审计范围](reports/美团/AI利润模型-20260925/audit_scope.md) | 美团 |
+| 2026-09-25 | [泡泡玛特：AI 对未来三年利润的影响与 2036 年盈利情景](reports/泡泡玛特/泡泡玛特-investment-team-AI利润与竞争格局-20260925.md) | 泡泡玛特 |
+| 2026-09-24 | [腾讯：AI如何影响未来三年利润，2036年能赚多少钱？](reports/腾讯/腾讯-AI利润研究-20260924/腾讯-investment-team-AI利润与竞争格局.md) | 腾讯 |
+| 2026-09-24 | [拼多多（PDD）研究报告](reports/拼多多/拼多多-AI与三年十年利润研究-20260924.md) | 拼多多 |
+| 2026-09-24 | [拼多多AI与利润研究：审计说明](reports/拼多多/AI利润模型-20260924/audit-notes.md) | 拼多多 |
 
 <!-- REPORTS-INDEX:END -->
 
